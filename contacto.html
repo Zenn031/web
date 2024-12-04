@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--CSS-->
+    <Style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Estilo del cuerpo de la pagina */
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        /* Header, logo y titulo */
+        .header {
+            padding: 60px;
+            text-align: center;
+            background: #faeb60;
+            color: rgb(88, 68, 68);
+        }
+
+        /* Estilo de la barra de navegacion */
+        .navbar {
+            display: flex;
+            background-color: #333;
+        }
+
+        /* Estilo de los enlaces de la barra de navegacion */
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        /* Cambiar el color cuando paso el mouse */
+        .navbar a:hover {
+            background-color: white;
+            color: #0b102e;
+        }
+
+        /* Contenedor de columnas */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Barra lateral */
+        .side {
+            flex: 30%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /*Columna principal */
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* Imagen */
+        .imagenfalsa {
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #0b102e;
+        }
+
+        /*Flex Responsive */
+        @media screen and (max-width: 700px) {
+            .row,
+            .navbar {
+                flex-direction: column;
+            }
+        }
+        /* MENU */
+.contenedor-header{
+    background: #0b102e;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 2000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: rgb(255, 255, 255);
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+    </Style>
+</head>
+<body>
+<!-- MENU ENCABEZADO -->
+<div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <a href="index.html">Ryan</a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="inicio.html" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="sobre mi.html" onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="contacto.html" onclick="seleccionar()">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    </header>
+    <center>
+    <div>
+        <main>
+            <section>
+                <h2>Sobre mí</h2>
+            <section>
+                <h2>Centro Educativo Marillac</h2>
+                <p>Como llegar</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.9721167049!2d-69.92388882534877!3d18.484922170263303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89c78951c3cf%3A0x505aaa4426118d4f!2sCentro%20Educativo%20Santa%20Luisa%20De%20Marillac!5e0!3m2!1ses!2sdo!4v1733252571841!5m2!1ses!2sdo" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </iframe>
+            </section>
+        </main>
+    </div> 
+        <footer>
+            <h2>Sobre mí</h2>
+                    ryan@marillac.edu.do
+                    (809)620-2688
+                    @tavarez_30bx
+            <p>&copy; 2024 Ryan Tavarez</p>
+
+        </footer>
+    </body>
+    </html>
+   </center>
+    
+        
+  

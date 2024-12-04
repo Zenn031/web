@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--CSS-->
+    <Style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Estilo del cuerpo de la pagina */
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        /* Header, logo y titulo */
+        .header {
+            padding: 60px;
+            text-align: center;
+            background: #faeb60;
+            color: rgb(88, 68, 68);
+        }
+
+        /* Estilo de la barra de navegacion */
+        .navbar {
+            display: flex;
+            background-color: #333;
+        }
+
+        /* Estilo de los enlaces de la barra de navegacion */
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        /* Cambiar el color cuando paso el mouse */
+        .navbar a:hover {
+            background-color: white;
+            color: #0b102e;
+        }
+
+        /* Contenedor de columnas */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Barra lateral */
+        .side {
+            flex: 30%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /*Columna principal */
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* Imagen */
+        .imagenfalsa {
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #0b102e;
+        }
+
+        /*Flex Responsive */
+        @media screen and (max-width: 700px) {
+            .row,
+            .navbar {
+                flex-direction: column;
+            }
+        }
+        /* MENU */
+.contenedor-header{
+    background: #0b102e;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 2000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: rgb(255, 255, 255);
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+    </Style>
+</head>
+<body>
+<!-- MENU ENCABEZADO -->
+<div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <a href="index.html">Ryan</a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="inicio.html" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="sobre mi.html" onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="contacto.html" onclick="seleccionar()">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+</div>
+
+    <!--Contenido-->
+    <div class="row">
+        <div class="side">
+            <h2>Acerca de Nosotros</h2>
+            <h2>Basketball</h2>
+            <div class="imagenfalsa"><img src="imagenes/Ryan Basketball.jpg" alt="" width="250" height="300"></div>
+            <p>Desde muy temprana edad, el baloncesto ha sido una pasión inquebrantable para mí. Con tan solo 5'9", he demostrado que la altura no es un impedimento para sobresalir en este deporte, poniendo todo mi esfuerzo y dedicación en cada entrenamiento y partido. Juego para el club Brisas del Isabela, donde he desarrollado mis habilidades y adquirido valiosa experiencia en el juego.
+
+                Mi compromiso con el baloncesto comenzó cuando tenía apenas tres años, y desde entonces, mi amor por el deporte no ha dejado de crecer. He trabajado arduamente para mejorar mis técnicas y comprensión del juego, lo que me ha permitido destacar en diversas competiciones y torneos.
+                
+                Uno de los logros más significativos en mi trayectoria ha sido mi participación en cuatro campamentos de la selección nacional de la República Dominicana. Estas experiencias me han permitido aprender de los mejores entrenadores y jugadores del país, además de brindarme la oportunidad de medirme con otros talentos emergentes. Cada campamento ha sido un paso crucial en mi camino hacia la selección nacional de FEDOMBAL, un objetivo que persigo con determinación y entusiasmo.
+                
+                Mi viaje en el baloncesto es una combinación de pasión, esfuerzo y aprendizaje continuo. Estoy comprometido a seguir trabajando duro, representando a mi club y, eventualmente, a mi país en el más alto nivel del baloncesto.</p>
+        </div>
+
+        <div class="main">
+            <p></p>
+            <br>
+            <h2>Hobbies</h2>
+            <h3>Mi Pasión por la Música</h3>
+            <div class="imagenfalsa"><img src="imagenes/OED.jpg" alt="Mujer" width="600" height="300"></div>
+            <p>Desde hace años, una chispa de creatividad y pasión por la música ha encendido mi deseo de convertirme en un productor musical. Esta aspiración ha sido una constante en mi vida, moldeada por diversas experiencias y una profunda conexión con la música. Mi objetivo es no solo crear melodías pegajosas, sino también influir en la industria musical y dejar una huella indeleble en el mundo de la música.
+
+                La música siempre ha sido un refugio para mí, un lugar donde puedo expresarme libremente y explorar mis emociones. Desde joven, he estado rodeado de diversos géneros y estilos musicales, lo que ha ampliado mi perspectiva y me ha permitido apreciar la diversidad y la riqueza de la música. He pasado innumerables horas escuchando, analizando y descomponiendo canciones, tratando de entender qué las hace especiales y cómo puedo aplicar esos conocimientos en mi propia producción.
+                
+                Uno de los aspectos más fascinantes de la producción musical es la capacidad de tomar una idea y transformarla en una obra de arte. El proceso creativo, desde la concepción de una melodía hasta la mezcla y masterización final, es un viaje lleno de desafíos y satisfacciones. Cada etapa del proceso ofrece oportunidades para innovar y experimentar, y estoy ansioso por sumergirme en este mundo.
+                
+                Para alcanzar mi meta, he estado estudiando y practicando diversas técnicas de producción. He aprendido a usar software de producción musical como Ableton Live y FL Studio, explorando sus herramientas y funcionalidades para crear sonidos únicos. También he investigado sobre teoría musical, diseño de sonido y técnicas de mezcla y masterización, con el fin de adquirir un conocimiento integral de la producción musical.
+                
+                Además de la parte técnica, he desarrollado un interés profundo en la colaboración con otros artistas. La producción musical no es solo una actividad solitaria; es una oportunidad para trabajar con cantantes, compositores y otros productores. A través de estas colaboraciones, se puede crear algo verdaderamente único y especial, fusionando diferentes talentos y visiones artísticas.
+                
+                Mi aspiración a convertirme en productor musical también está impulsada por el deseo de influir en la industria musical. Quiero ser parte de una nueva generación de productores que desafíen las normas establecidas y traigan frescura y originalidad a la música. Estoy motivado por la idea de descubrir y desarrollar nuevos talentos, ayudándolos a encontrar su voz y a alcanzar su máximo potencial.
+                
+                La tecnología ha abierto un sinfín de posibilidades en el mundo de la producción musical. Con el acceso a una amplia gama de herramientas y plataformas digitales, los productores de hoy tienen la capacidad de experimentar y crear sin restricciones. Estoy emocionado por aprovechar estas oportunidades y llevar mis habilidades al siguiente nivel.
+                
+                Mi viaje hacia la producción musical es una combinación de pasión, aprendizaje y perseverancia. Estoy comprometido a seguir trabajando arduamente, perfeccionando mis habilidades y explorando nuevas fronteras en la música. Sé que el camino será largo y lleno de desafíos, pero estoy decidido a superar cada obstáculo y a hacer realidad mi sueño de convertirme en un productor musical exitoso.</p>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <h2>Todos los derechos reservados 4to B</h2>
+    </div>
+</body>
+</html>

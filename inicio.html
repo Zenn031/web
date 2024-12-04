@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--CSS-->
+    <Style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Estilo del cuerpo de la pagina */
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        /* Header, logo y titulo */
+        .header {
+            padding: 60px;
+            text-align: center;
+            background: #faeb60;
+            color: rgb(88, 68, 68);
+        }
+
+        /* Estilo de la barra de navegacion */
+        .navbar {
+            display: flex;
+            background-color: #333;
+        }
+
+        /* Estilo de los enlaces de la barra de navegacion */
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        /* Cambiar el color cuando paso el mouse */
+        .navbar a:hover {
+            background-color: white;
+            color: #0b102e;
+        }
+
+        /* Contenedor de columnas */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Barra lateral */
+        .side {
+            flex: 30%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /*Columna principal */
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* Imagen */
+        .imagenfalsa {
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #0b102e;
+        }
+
+        /*Flex Responsive */
+        @media screen and (max-width: 700px) {
+            .row,
+            .navbar {
+                flex-direction: column;
+            }
+        }
+        /* MENU */
+.contenedor-header{
+    background: #0b102e;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 2000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: rgb(255, 255, 255);
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+    </Style>
+</head>
+<body>
+<!-- MENU ENCABEZADO -->
+<div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <a href="index.html">Ryan</a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="inicio.html" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="sobre mi.html" onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="contacto.html" onclick="seleccionar()">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+</div>
+
+    <!--Contenido-->
+    <div class="row">
+        <div class="side">
+            <h2>Acerca de Nosotros</h2>
+            <h3>Yo</h3>
+            <div class="imagenfalsa"><img src="imagenes/Ryan chiquito.jpg" alt="" width="250" height="300"></div>
+            <p>¡Hola! Soy Ryan Tavarez Linares, un entusiasta estudiante del Centro Educativo Marillac. En mi vida académica, me esfuerzo por aprender y crecer cada día. Una de mis grandes pasiones es el baloncesto, donde no solo disfruto del juego, sino que también valoro las lecciones de trabajo en equipo, disciplina y perseverancia que me ha enseñado. Además de mi amor por el deporte, tengo una fascinación por la producción de música. La música, con su capacidad de conectar y emocionar a las personas, es un campo en el que aspiro a destacar. Sueño con crear melodías y ritmos que no solo entretengan, sino que también inspiren y transformen vidas. Mi objetivo es seguir desarrollándome en ambos campos: alcanzar nuevas alturas en el baloncesto y adquirir las habilidades necesarias para ser un productor musical innovador. Estoy emocionado por el futuro y listo para enfrentar cualquier desafío que se presente. ¡Gracias por su atención y apoyo en mi pagia web!</p>
+        </div>
+
+        <div class="main">
+            <h2>Acerca</h2>
+            <h3>Mi Familia</h3>
+            <div class="imagenfalsa"><img src="imagenes/Familia Ryan.jpg" alt="Mujer" width="600" height="300"></div>
+            <br>
+            <p>La relación con mi familia ha sido fundamental en mi vida y en la realización de mis sueños. Desde pequeño, he sido bendecido con una familia amorosa y solidaria que siempre ha estado a mi lado, brindándome apoyo incondicional en cada paso de mi camino. Sus valores, enseñanzas y cariño han sido la base sobre la cual he construido mis aspiraciones y metas.
+
+                Mis padres, en particular, han jugado un papel crucial en mi desarrollo. Su dedicación y sacrificio me han inspirado a esforzarme y a no rendirme ante las adversidades. Han estado presentes en cada momento importante, ya sea en mis primeros pasos en el baloncesto o en mis primeras incursiones en la producción musical. Sus palabras de aliento y sus acciones han demostrado una y otra vez que creen en mí y en mi potencial.
+                
+                Recuerdo cómo mi madre siempre encontraba tiempo para llevarme a los entrenamientos de baloncesto, sin importar lo ocupada que estuviera. Su paciencia y comprensión me han enseñado la importancia del compromiso y la perseverancia. Mi padre, por otro lado, ha sido una fuente constante de sabiduría y consejos prácticos. Con su apoyo, he aprendido a enfrentar los desafíos con una actitud positiva y a ver los obstáculos como oportunidades para crecer.
+                
+                Mis hermanos también han sido una parte esencial de mi viaje. Con ellos he compartido risas, juegos y momentos de aprendizaje que han enriquecido mi vida. Sus diferentes perspectivas y talentos han ampliado mi visión del mundo y me han ayudado a desarrollar una mente abierta y creativa. Nos hemos apoyado mutuamente en nuestras respectivas metas, creando un ambiente de colaboración y respeto.
+                
+                Además de mis padres y hermanos, otros miembros de mi familia, como mis abuelos, tíos y primos, han tenido un impacto significativo en mi vida. Sus historias y experiencias me han ofrecido valiosas lecciones sobre la vida, la humildad y la importancia de mantenernos unidos. Las reuniones familiares, llenas de amor y alegría, siempre me han recordado la fortaleza que proviene de tener una red de apoyo sólida y amorosa.
+                
+                En momentos de dificultad, mi familia ha sido mi refugio. Han estado ahí para consolarme y ofrecerme su hombro cuando lo he necesitado. Su capacidad para escucharme y entenderme ha sido un bálsamo en tiempos de incertidumbre. Gracias a ellos, he aprendido la importancia de la resiliencia y la capacidad de recuperarse de las caídas.
+                
+                En mi camino hacia la producción musical, mi familia ha sido un pilar fundamental. Han celebrado cada uno de mis logros y me han animado a seguir adelante incluso cuando las cosas no salían como esperaba. Su fe en mis habilidades me ha dado la confianza necesaria para perseguir mis sueños con determinación y pasión.
+                
+                Es gracias a la inquebrantable relación con mi familia que he podido mantenerme firme en mis objetivos y avanzar con seguridad hacia el futuro. Ellos han sido, y siempre serán, la fuerza motriz detrás de mis éxitos y la inspiración que me impulsa a ser mejor cada día. A través de su amor y apoyo, he aprendido que no importa cuán grandes sean los desafíos, siempre es posible superarlos cuando se tiene una familia que te respalda.</p>
+
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <h2>Todos los derechos reservados a Ryan Tavarez</h2>
+    </div>
+</body>
+</html>
